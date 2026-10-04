@@ -1,0 +1,151 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: #252b48;
+  color: white;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: white;
+}
+
+.nav-links button {
+  background: #e85d75;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 15px;
+}
+
+.nav-links button:hover {
+  background: #cf405b;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    gap: 12px;
+    padding: 14px 18px;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    font-size: 19px;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    flex: 0 0 auto;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+  }
+
+  .nav-links button {
+    padding: 8px 10px;
+  }
+}
+
+.auth-container {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 20px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px #00000012;
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #d3d6e0;
+  border-radius: 7px;
+  text-align: left;
+}
+
+.auth-form .form-group {
+  margin-bottom: 18px;
+}
+
+.auth-form .form-group input {
+  margin-bottom: 0;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 13px;
+  background: #4c61d9;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 18px;
+}
+
+.auth-form p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.auth-form .error {
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+.auth-form a {
+  color: #4c61d9;
+  font-weight: bold;
+}
+
+@media (max-height: 560px) {
+  .auth-container {
+    align-items: flex-start;
+  }
+}
+
+.error {
+  color: #c62828;
+  background: #ffebee;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
